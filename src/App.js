@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Apple from './components/apple'
+import './App.less';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <header className="header">苹果篮子</header>
+        <div>
+          <div>
+            <div>当前</div>
+            <div>2个苹果，418克</div>
+          </div>
+          <div>
+            <div>已吃掉</div>
+            <div>9个苹果，2118克</div>
+          </div>
+        </div>
+        <Apple/>
+        <button>摘苹果</button>
+      </div>
     </div>
   );
 }
